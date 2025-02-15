@@ -3,7 +3,7 @@ LL_GEN 		:= src/linked_list_int.c
 SOURCES   := src/main.c $(LL_GEN)
 BIN 		  := main
 
-
+# Override the template search path to the local templates folder
 export GEN_TEMPLATE_PATH=templates
 
 .PHONY: template_gen
@@ -18,6 +18,5 @@ $(OUT_DIR)/$(BIN): $(SOURCES)
 	gcc $^ -o $@
 
 template_gen: $(LL_GEN)
-
 src/linked_list_int.c src/linked_list_int.h: templates/linked_list.tpl templates/linked_list.htpl templates/linked_list.ctpl
 	generics-generator linked_list --datatype=int --outputdir=src
