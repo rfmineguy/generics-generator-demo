@@ -16,3 +16,7 @@ default = "printf"
 [args.calloc]
 symbol = "CALLOC"
 default = "calloc"
+
+[args.header]
+symbol = "HEADER_INCLUDE"
+default = "stdint.h"

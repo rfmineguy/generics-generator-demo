@@ -1,5 +1,6 @@
 #ifndef LL_T
 #define LL_T
+#include "HEADER_INCLUDE"
 
 typedef struct ll_node_T {
 	#T val;

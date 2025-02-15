@@ -67,7 +67,7 @@ void ll_T_popfront(ll_T* ll, #T val) {
 void ll_T_print(ll_T* ll) {
 	ll_node_T* n = ll->head;
 	while (n) {
-		ll_int_node_print(n->val);
+		ll_T_node_print(n->val);
 		PRINT(" -> ");
 		n = n->next;
 	}
