@@ -1,5 +1,6 @@
 #ifndef LL_int
 #define LL_int
+#include "stdint.h"
 
 typedef struct ll_node_int {
 	int val;
