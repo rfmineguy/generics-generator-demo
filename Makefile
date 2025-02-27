@@ -1,5 +1,7 @@
 OUT_DIR   := out
-LL_GEN 		:= src/linked_list_int.c src/linked_list_vec2.c
+LL_GEN 		:= src/linked_list_int.c \
+						 src/linked_list_vec2.c \
+						 src/binary_tree_int.c
 SOURCES   := src/main.c $(LL_GEN)
 BIN 		  := main
 
@@ -21,6 +23,8 @@ template_gen: $(LL_GEN)
 src/linked_list_int.c src/linked_list_int.h: templates/linked_list.tpl templates/linked_list.htpl templates/linked_list.ctpl
 	generics-generator linked_list --datatype=int --outputdir=src
 
-
 src/linked_list_vec2.c src/linked_list_vec2.h: templates/linked_list.tpl templates/linked_list.htpl templates/linked_list.ctpl
 	generics-generator linked_list --datatype=vec2 --header="vec2.h" --outputdir=src
+
+src/binary_tree_int.c src/binary_tree_int.h: templates/binary_tree.tpl templates/binary_tree.htpl templates/binary_tree.ctpl
+	generics-generator binary_tree --datatype=int --outputdir=src
