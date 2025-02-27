@@ -1,3 +1,8 @@
+> [!IMPORTANT]  
+> This repo is no longer updated, as all of the content has been moved into the main generics-generator repository
+> [generics-generator](https://github.com/rfmineguy/generics-generator)
+
+
 # generics-generator-demo
 A demo repo for the generics-generator utility
 
